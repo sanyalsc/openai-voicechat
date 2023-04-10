@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 #Temp files
-*.wav
+#*.wav
 *.mp3
 
 # Distribution / packaging
