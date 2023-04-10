@@ -1,4 +1,5 @@
 import os
+import argparse
 
 import openai
 
@@ -13,4 +14,4 @@ def main(api_key):
     print(transcript)
 
 if __name__ == '__main__':
-    main()
+    main('')
