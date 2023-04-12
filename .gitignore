@@ -7,8 +7,12 @@ __pycache__/
 *.so
 
 #Temp files
-#*.wav
+*.wav
 *.mp3
+*.tmp
+
+#Env file
+.env
 
 # Distribution / packaging
 .Python
