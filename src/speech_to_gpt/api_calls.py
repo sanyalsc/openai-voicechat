@@ -50,14 +50,13 @@ def main(language='English'):
                 ]
                 )
         if language != 'English':
-            translated_reply = openai.ChatCompletion.create(
+            reply = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
                 messages=[
                 {"role": "system", "content": f"You are an English to {language} translator."},
                 {"role": "user", "content": f"Translate '{reply['choices'][0]['message']['content']}' to {language}"}
                 ]
                 )
-            myobj = gtts.gTTS(text=translated_reply['choices'][0]['message']['content'], lang=LANG_LOOKUP[language], slow=False)
         else:
             myobj = gtts.gTTS(text=reply['choices'][0]['message']['content'], lang=LANG_LOOKUP[language], slow=False)
         play_reply(myobj)
