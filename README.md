@@ -1,4 +1,4 @@
-# openai-voicechat2
+# openai-voicechat
  
 Chat with chatgpt!
 
